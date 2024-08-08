@@ -44,7 +44,7 @@ match = "(.*)( )(.*[0-9])( \\| )(.*)"
 replace = "$1$3$5"
 
 [[node_pref.rename_node]]
-match = "(流媒体)|(-M)|(原生IP)"
+match = "(流媒体)|(-M)|(原生IP)|(解锁)"
 replace = "[M]"
 
 [[node_pref.rename_node]]
@@ -70,6 +70,10 @@ replace = ""
 [[node_pref.rename_node]]
 match = "^(.*)(HK(?!B|G|T))([\u4e00-\u9fa5].*)"
 replace = "香港 $3"
+
+[[node_pref.rename_node]]
+match = "^(HK)([0-9].*)"
+replace = "香港 $2"
 
 [[node_pref.rename_node]]
 match = "^(HKBN)(.*)"
@@ -289,279 +293,279 @@ match = "(NetEaseMusic|网易云音乐|网易云解锁)"
 emoji = "🎶"
 
 [[emojis.emoji]]
-match = "(阿尔巴尼亚|Albania)"
+match = "(\\bAL[0-9]?\\b|阿尔巴尼亚|Albania)"
 emoji = "🇦🇱"
 
 [[emojis.emoji]]
-match = "(阿曼苏丹|马斯喀特|Muscat)"
+match = "(\\bOM[0-9]?\\b|阿曼苏丹|马斯喀特|Muscat)"
 emoji = "🇴🇲"
 
 [[emojis.emoji]]
-match = "(阿塞拜疆|Azerbaijan)"
+match = "(\\bAZ[0-9]?\\b|阿塞拜疆|Azerbaijan)"
 emoji = "🇦🇿"
 
 [[emojis.emoji]]
-match = "(埃及|Egypt)"
+match = "(\\bEG[0-9]?\\b|埃及|Egypt)"
 emoji = "🇪🇬"
 
 [[emojis.emoji]]
-match = "(爱沙尼亚|Estonia)"
+match = "(\\bEE[0-9]?\\b|爱沙尼亚|Estonia)"
 emoji = "🇪🇪"
 
 [[emojis.emoji]]
-match = "(巴林|Bahrain)"
+match = "(\\bBH[0-9]?\\b|巴林|Bahrain)"
 emoji = "🇧🇭"
 
 [[emojis.emoji]]
-match = "(巴拿马|Panama)"
+match = "(\\bPA[0-9]?\\b|巴拿马|Panama)"
 emoji = "🇵🇦"
 
 [[emojis.emoji]]
-match = "(保加利亚|Bulgaria)"
+match = "(\\bBG[0-9]?\\b|保加利亚|Bulgaria)"
 emoji = "🇧🇬"
 
 [[emojis.emoji]]
-match = "(北马其顿|Macedonia)"
+match = "(\\bMK[0-9]?\\b|北马其顿|Macedonia)"
 emoji = "🇲🇰"
 
 [[emojis.emoji]]
-match = "(波黑共和国|波士尼亚与赫塞哥维纳|Bosnia|Herzegovina)"
+match = "(\\bBA[0-9]?\\b|波黑共和国|波士尼亚与赫塞哥维纳|Bosnia|Herzegovina)"
 emoji = "🇧🇦"
 
 [[emojis.emoji]]
-match = "(梵蒂冈|Vatican)"
+match = "(\\bVA[0-9]?\\b|梵蒂冈|Vatican)"
 emoji = "🇻🇦"
 
 [[emojis.emoji]]
-match = "(格鲁吉亚|Georgia)"
+match = "(\\bGE[0-9]?\\b|格鲁吉亚|Georgia)"
 emoji = "🇬🇪"
 
 [[emojis.emoji]]
-match = "(哈萨克斯坦|Kazakhstan)"
+match = "(\\bKZ[0-9]?\\b|哈萨克斯坦|Kazakhstan)"
 emoji = "🇰🇿"
 
 [[emojis.emoji]]
-match = "(吉尔吉斯斯坦|Kyrgyzstan)"
+match = "(\\bKG[0-9]?\\b|吉尔吉斯斯坦|Kyrgyzstan)"
 emoji = "🇰🇬"
 
 [[emojis.emoji]]
-match = "(柬埔寨|Cambodia)"
+match = "(\\bKH[0-9]?\\b|柬埔寨|Cambodia)"
 emoji = "🇰🇭"
 
 [[emojis.emoji]]
-match = "(克罗地亚|Croatia)"
+match = "(\\bHR[0-9]?\\b|克罗地亚|Croatia)"
 emoji = "🇭🇷"
 
 [[emojis.emoji]]
-match = "(肯尼亚|Kenya)"
+match = "(\\bKE[0-9]?\\b|肯尼亚|Kenya)"
 emoji = "🇰🇪"
 
 [[emojis.emoji]]
-match = "(拉脱维亚|Latvia)"
+match = "(\\bLV[0-9]?\\b|拉脱维亚|Latvia)"
 emoji = "🇱🇻"
 
 [[emojis.emoji]]
-match = "(立陶宛|Lietuvos)"
+match = "(\\bLT[0-9]?\\b|立陶宛|Lietuvos)"
 emoji = "🇱🇹"
 
 [[emojis.emoji]]
-match = "(卢森堡|Luxemburg|Luxembourg)"
+match = "(\\bLU[0-9]?\\b|卢森堡|Luxemburg|Luxembourg)"
 emoji = "🇱🇺"
 
 [[emojis.emoji]]
-match = "(蒙古|Монголулс|Mongolia)"
+match = "(\\bMN[0-9]?\\b|蒙古|Монголулс|Mongolia)"
 emoji = "🇲🇳"
 
 [[emojis.emoji]]
-match = "(秘鲁|Peru)"
+match = "(\\bPE[0-9]?\\b|秘鲁|Peru)"
 emoji = "🇵🇪"
 
 [[emojis.emoji]]
-match = "(缅甸|Myanmar)"
+match = "(\\bMM[0-9]?\\b|缅甸|Myanmar)"
 emoji = "🇲🇲"
 
 [[emojis.emoji]]
-match = "(墨西哥|Mexico)"
+match = "(\\bMX[0-9]?\\b|墨西哥|Mexico)"
 emoji = "🇲🇽"
 
 [[emojis.emoji]]
-match = "(南极|Antarctica)"
+match = "(\\bAQ[0-9]?\\b|南极|Antarctica)"
 emoji = "🇦🇶"
 
 [[emojis.emoji]]
-match = "(尼日利亚|Nigeria)"
+match = "(\\bNG[0-9]?\\b|尼日利亚|Nigeria)"
 emoji = "🇳🇬"
 
 [[emojis.emoji]]
-match = "(葡萄牙|Portugal)"
+match = "(\\bPT[0-9]?\\b|葡萄牙|Portugal)"
 emoji = "🇵🇹"
 
 [[emojis.emoji]]
-match = "(塞尔维亚|Serbia)"
+match = "(\\bRS[0-9]?\\b|塞尔维亚|Serbia)"
 emoji = "🇷🇸"
 
 [[emojis.emoji]]
-match = "(塞浦路斯|Cyprus)"
+match = "(\\bCY[0-9]?\\b|塞浦路斯|Cyprus)"
 emoji = "🇨🇾"
 
 [[emojis.emoji]]
-match = "(斯洛伐克|Slovensko)"
+match = "(\\bSK[0-9]?\\b|斯洛伐克|Slovensko)"
 emoji = "🇸🇰"
 
 [[emojis.emoji]]
-match = "(斯洛文尼亚|Slovenia)"
+match = "(\\bSI[0-9]?\\b|斯洛文尼亚|Slovenia)"
 emoji = "🇸🇮"
 
 [[emojis.emoji]]
-match = "(突尼斯|Tunisia)"
+match = "(\\bTN[0-9]?\\b|突尼斯|Tunisia)"
 emoji = "🇹🇳"
 
 [[emojis.emoji]]
-match = "(乌拉圭|Uruguay)"
+match = "(\\bUY[0-9]?\\b|乌拉圭|Uruguay)"
 emoji = "🇺🇾"
 
 [[emojis.emoji]]
-match = "(希腊|Greece)"
+match = "(\\bGR[0-9]?\\b|希腊|Greece)"
 emoji = "🇬🇷"
 
 [[emojis.emoji]]
-match = "(新西兰|纽西兰|New Zealand)"
+match = "(\\bNZ[0-9]?\\b|新西兰|纽西兰|New Zealand)"
 emoji = "🇳🇿"
 
 [[emojis.emoji]]
-match = "(伊朗|Iran)"
+match = "(\\bIR[0-9]?\\b|伊朗|Iran)"
 emoji = "🇮🇷"
 
 [[emojis.emoji]]
-match = "(约旦|Jordan)"
+match = "(\\bJO[0-9]?\\b|约旦|Jordan)"
 emoji = "🇯🇴"
 
 [[emojis.emoji]]
-match = "(智利|智力|Chile)"
+match = "(\\bCL[0-9]?\\b|智利|智力|Chile)"
 emoji = "🇨🇱"
 
 [[emojis.emoji]]
-match = "(Ascension|阿森松)"
+match = "(\\bAC[0-9]?\\b|Ascension|阿森松)"
 emoji = "🇦🇨"
 
 [[emojis.emoji]]
-match = "(Austria|Vienna|奥地利|维也纳)"
+match = "(\\bAT[0-9]?\\b|Austria|Vienna|奥地利|维也纳)"
 emoji = "🇦🇹"
 
 [[emojis.emoji]]
-match = "(Bengal|Bangladesh|孟加拉)"
+match = "(\\bBD[0-9]?\\b|Bengal|Bangladesh|孟加拉)"
 emoji = "🇧🇩"
 
 [[emojis.emoji]]
-match = "(Colombia|哥伦比亚)"
+match = "(\\bCO[0-9]?\\b|Colombia|哥伦比亚)"
 emoji = "🇨🇴"
 
 [[emojis.emoji]]
-match = "(Costa Rica|哥斯达黎加)"
+match = "(\\bCR[0-9]?\\b|Costa Rica|哥斯达黎加)"
 emoji = "🇨🇷"
 
 [[emojis.emoji]]
-match = "(Czech|捷克)"
+match = "(\\bCZ[0-9]?\\b|Czech|捷克)"
 emoji = "🇨🇿"
 
 [[emojis.emoji]]
-match = "(Ecuador|厄瓜多尔)"
+match = "(\\bEC[0-9]?\\b|Ecuador|厄瓜多尔)"
 emoji = "🇪🇨"
 
 [[emojis.emoji]]
-match = "(Europe|欧洲)"
+match = "(\\bEU[0-9]?\\b|Europe|欧洲)"
 emoji = "🇪🇺"
 
 [[emojis.emoji]]
-match = "(Finland|Helsinki|芬兰|赫尔辛基)"
+match = "(\\bFI[0-9]?\\b|Finland|Helsinki|芬兰|赫尔辛基)"
 emoji = "🇫🇮"
 
 [[emojis.emoji]]
-match = "(Hungary|匈牙利)"
+match = "(\\bHU[0-9]?\\b|Hungary|匈牙利)"
 emoji = "🇭🇺"
 
 [[emojis.emoji]]
-match = "(IMAN|马恩岛|Mann)"
+match = "(\\bIM[0-9]?\\b|IMAN|马恩岛|Mann)"
 emoji = "🇮🇲"
 
 [[emojis.emoji]]
-match = "(Indonesia|Jakarta|印尼|印度尼西亚|雅加达)"
+match = "(\\bID[0-9]?\\b|Indonesia|Jakarta|印尼|印度尼西亚|雅加达)"
 emoji = "🇮🇩"
 
 [[emojis.emoji]]
-match = "(Ireland|Dublin|爱尔兰|都柏林)"
+match = "(\\bIE[0-9]?\\b|Ireland|Dublin|爱尔兰|都柏林)"
 emoji = "🇮🇪"
 
 [[emojis.emoji]]
-match = "(Israel|以色列)"
+match = "(\\bIL[0-9]?\\b|Israel|以色列)"
 emoji = "🇮🇱"
 
 [[emojis.emoji]]
-match = "(Italy|Milan|意大利|米兰)"
+match = "(\\bIT[0-9]?\\b|Italy|Milan|意大利|米兰)"
 emoji = "🇮🇹"
 
 [[emojis.emoji]]
-match = "(Moldova|摩尔多瓦)"
+match = "(\\bMD[0-9]?\\b|Moldova|摩尔多瓦)"
 emoji = "🇲🇩"
 
 [[emojis.emoji]]
-match = "(Morocco|摩洛哥)"
+match = "(\\bMA[0-9]?\\b|Morocco|摩洛哥)"
 emoji = "🇲🇦"
 
 [[emojis.emoji]]
-match = "(Nepal|尼泊尔)"
+match = "(\\bNP[0-9]?\\b|Nepal|尼泊尔)"
 emoji = "🇳🇵"
 
 [[emojis.emoji]]
-match = "(Norway|挪威)"
+match = "(\\bNO[0-9]?\\b|Norway|挪威)"
 emoji = "🇳🇴"
 
 [[emojis.emoji]]
-match = "(Pakistan|巴基斯坦)"
+match = "(\\bPK[0-9]?\\b|Pakistan|巴基斯坦)"
 emoji = "🇵🇰"
 
 [[emojis.emoji]]
-match = "(Puerto.*?Rico|波多黎各)"
+match = "(\\bPR[0-9]?\\b|Puerto.*?Rico|波多黎各)"
 emoji = "🇵🇷"
 
 [[emojis.emoji]]
-match = "(Switzerland|Zurich|瑞士|苏黎世)"
+match = "(\\bCH[0-9]?\\b|Switzerland|Zurich|瑞士|苏黎世)"
 emoji = "🇨🇭"
 
 [[emojis.emoji]]
-match = "(Venezuela|委内瑞拉)"
+match = "(\\bVE[0-9]?\\b|Venezuela|委内瑞拉)"
 emoji = "🇻🇪"
 
 [[emojis.emoji]]
-match = "(\\bAR\\b|阿根廷|Argentina)"
+match = "(\\bAR[0-9]?\\b|阿根廷|Argentina)"
 emoji = "🇦🇷"
 
 [[emojis.emoji]]
-match = "(\\bBE\\b|Belgium|比利时)"
+match = "(\\bBE[0-9]?\\b|Belgium|比利时)"
 emoji = "🇧🇪"
 
 [[emojis.emoji]]
-match = "(\\bBR\\b|Brazil|Paulo|巴西|圣保罗)"
+match = "(\\bBR[0-9]?\\b|Brazil|Paulo|巴西|圣保罗)"
 emoji = "🇧🇷"
 
 [[emojis.emoji]]
-match = "(\\bMY\\b|Malaysia|马来西亚)"
+match = "(\\bMY[0-9]?\\b|Malaysia|马来西亚)"
 emoji = "🇲🇾"
 
 [[emojis.emoji]]
-match = "(\\bPH\\b|Philippines|菲律宾|马尼拉)"
+match = "(\\bPH[0-9]?\\b|Philippines|菲律宾|马尼拉)"
 emoji = "🇵🇭"
 
 [[emojis.emoji]]
-match = "(\\bRO\\b|Romania|罗马尼亚)"
+match = "(\\bRO[0-9]?\\b|Romania|罗马尼亚)"
 emoji = "🇷🇴"
 
 [[emojis.emoji]]
-match = "(\\bSA\\b|Arabia|沙特)"
+match = "(\\bSA[0-9]?\\b|Arabia|沙特)"
 emoji = "🇸🇦"
 
 [[emojis.emoji]]
-match = "(\\bSE\\b|Sweden|瑞典)"
+match = "(\\bSE[0-9]?\\b|Sweden|瑞典)"
 emoji = "🇸🇪"
 
 [[emojis.emoji]]
@@ -573,15 +577,15 @@ match = "(\\bT[U]R\\b|Turkey|土耳其|土.*(?!▷|回|转)|伊斯坦布尔)"
 emoji = "🇹🇷"
 
 [[emojis.emoji]]
-match = "(\\bUA\\b|Ukraine|乌克兰)"
+match = "(\\bUA[0-9]?\\b|Ukraine|乌克兰)"
 emoji = "🇺🇦"
 
 [[emojis.emoji]]
-match = "(\\bVN\\b|Vietnam|越南)"
+match = "(\\bVN[0-9]?\\b|Vietnam|越南)"
 emoji = "🇻🇳"
 
 [[emojis.emoji]]
-match = "(\\bZA\\b|Africa|南非)"
+match = "(\\bZA[0-9]?\\b|Africa|南非)"
 emoji = "🇿🇦"
 
 [[emojis.emoji]]
@@ -613,7 +617,7 @@ match = "(?i:\\bIS[L]?\\b|Iceland|冰岛)"
 emoji = "🇮🇸"
 
 [[emojis.emoji]]
-match = "(?i:\\bKP\\b|North.*?Korea|朝鲜)"
+match = "(?i:\\bKP[0-9]?\\b|North.*?Korea|朝鲜)"
 emoji = "🇰🇵"
 
 [[emojis.emoji]]
@@ -649,7 +653,7 @@ match = "(?i:\\bSG[P]?\\b|Singapore|新加坡|狮城|獅城|[^-]新|新(?!▷|�
 emoji = "🇸🇬"
 
 [[emojis.emoji]]
-match = "(?i:\\bUK\\b|\\bGB[R]?\\b|England|United.*?Kingdom|London|英国|[^-]英|伦敦|英.*(?!▷|回|转))"
+match = "(?i:\\bUK[0-9]?\\b|\\bGB[R]?\\b|England|United.*?Kingdom|London|英国|[^-]英|伦敦|英.*(?!▷|回|转))"
 emoji = "🇬🇧"
 
 [[emojis.emoji]]
@@ -657,11 +661,11 @@ match = "(?i:\\bUS[A]?\\b|America|United.*?States|美国|[^-]美|波特兰|达�
 emoji = "🇺🇸"
 
 [[emojis.emoji]]
-match = "(?i:\\bHK[G]?\\b|Hong.*?Kong|\\bHKT\\b|\\bHKBN\\b|\\bHGC\\b|\\bWTT\\b|\\bCMI\\b|[^-]港|港(?!▷|回|转))"
+match = "(?i:\\bHK[0-9]?\\b|\\bHK[G]?\\b|Hong.*?Kong|\\bHKT\\b|\\bHKBN\\b|\\bHGC\\b|\\bWTT\\b|\\bCMI\\b|[^-]港|港(?!▷|回|转))"
 emoji = "🇭🇰"
 
 [[emojis.emoji]]
-match = "(?i:\\bMO\\b|Macao|澳门|\\bCTM\\b|澳(?!大利亚).*(?!▷|回|转))"
+match = "(?i:\\bMO[0-9]?\\b|Macao|澳门|\\bCTM\\b|澳(?!大利亚).*(?!▷|回|转))"
 emoji = "🇲🇴"
 
 [[emojis.emoji]]
@@ -682,6 +686,9 @@ rule = [
     "[]🇹🇼 台湾-SUB1",
     "[]🇹🇼 台湾-SUB2",
     "[]🇹🇼 台湾-SUB3",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
     "[]🇭🇰 香港-SUB1",
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
@@ -702,6 +709,7 @@ rule = [
     "[]🇷🇺 俄罗斯-SUB3",
     "[]🍱 冷门地区",
     "[]🇭🇰 香港-轮询",
+    "[]🇲🇴 澳门-轮询",
     "[]🇹🇼 台湾-轮询",
     "[]🇺🇸 美国-轮询",
     "[]🇯🇵 日本-轮询",
@@ -751,6 +759,9 @@ rule = [
     "[]🇭🇰 香港-SUB1",
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
     "[]🇹🇼 台湾-SUB1",
     "[]🇹🇼 台湾-SUB2",
     "[]🇹🇼 台湾-SUB3",
@@ -775,6 +786,9 @@ rule = [
     "[]🇭🇰 香港-SUB1",
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
     "[]🇹🇼 台湾-SUB1",
     "[]🇹🇼 台湾-SUB2",
     "[]🇹🇼 台湾-SUB3",
@@ -808,6 +822,10 @@ rule = [
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
     "[]🇭🇰 香港-轮询",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
+    "[]🇲🇴 澳门-轮询",
     "[]🇹🇼 台湾-SUB1",
     "[]🇹🇼 台湾-SUB2",
     "[]🇹🇼 台湾-SUB3",
@@ -844,6 +862,10 @@ rule = [
     "[]🇭🇰 香港-SUB1",
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
+    "[]🇲🇴 澳门-轮询",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
     "[]🇹🇼 台湾-轮询",
     "[]🇹🇼 台湾-SUB1",
     "[]🇹🇼 台湾-SUB2",
@@ -907,6 +929,9 @@ rule = [
     "[]🇭🇰 香港-SUB1",
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
 ]
 
 [[custom_groups]]
@@ -926,6 +951,10 @@ rule = [
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
     "[]🇭🇰 香港-轮询",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
+    "[]🇲🇴 澳门-轮询",
     "[]🇹🇼 台湾-SUB1",
     "[]🇹🇼 台湾-SUB2",
     "[]🇹🇼 台湾-SUB3",
@@ -959,6 +988,7 @@ disable_udp = false
 rule = [
     "[]🔄 延迟最低",
     "[]🇭🇰 香港-轮询",
+    "[]🇲🇴 澳门-轮询",
     "[]🇹🇼 台湾-轮询",
     "[]🇺🇸 美国-轮询",
     "[]🇯🇵 日本-轮询",
@@ -967,12 +997,15 @@ rule = [
     "[]🇷🇺 俄罗斯-轮询",
     "[]🇰🇷 韩国-轮询",
     "[]🍱 冷门地区",
-    "[]🇹🇼 台湾-SUB1",
-    "[]🇹🇼 台湾-SUB2",
-    "[]🇹🇼 台湾-SUB3",
     "[]🇭🇰 香港-SUB1",
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
+    "[]🇹🇼 台湾-SUB1",
+    "[]🇹🇼 台湾-SUB2",
+    "[]🇹🇼 台湾-SUB3",
     "[]🇺🇸 美国-SUB1",
     "[]🇺🇸 美国-SUB2",
     "[]🇺🇸 美国-SUB3",
@@ -1013,6 +1046,7 @@ rule = [
     "[]🔄 延迟最低",
     "[]🇺🇸 美国-轮询",
     "[]🇭🇰 香港-轮询",
+    "[]🇲🇴 澳门-轮询",
     "[]🇹🇼 台湾-轮询",
     "[]🇯🇵 日本-轮询",
     "[]🇸🇬 新加坡-轮询",
@@ -1025,6 +1059,9 @@ rule = [
     "[]🇭🇰 香港-SUB1",
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
     "[]🇹🇼 台湾-SUB1",
     "[]🇹🇼 台湾-SUB2",
     "[]🇹🇼 台湾-SUB3",
@@ -1084,6 +1121,9 @@ rule = [
     "[]🇭🇰 香港-SUB1",
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
     "[]🇬🇧 英国-延迟最低",
     "[]🇯🇵 日本-SUB1",
     "[]🇯🇵 日本-SUB2",
@@ -1108,6 +1148,7 @@ rule = [
     "[]🇸🇬 新加坡-SUB3",
     "[]🇹🇼 台湾-轮询",
     "[]🇭🇰 香港-轮询",
+    "[]🇲🇴 澳门-轮询",
     "[]🇺🇸 美国-轮询",
     "[]🇹🇼 台湾-SUB1",
     "[]🇹🇼 台湾-SUB2",
@@ -1115,6 +1156,9 @@ rule = [
     "[]🇭🇰 香港-SUB1",
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
     "[]🍱 冷门地区",
     "[]🇯🇵 日本-轮询",
     "[]🇬🇧 英国-延迟最低",
@@ -1145,6 +1189,10 @@ rule = [
     "[]🇭🇰 香港-SUB1",
     "[]🇭🇰 香港-SUB2",
     "[]🇭🇰 香港-SUB3",
+    "[]🇲🇴 澳门-轮询",
+    "[]🇲🇴 澳门-SUB1",
+    "[]🇲🇴 澳门-SUB2",
+    "[]🇲🇴 澳门-SUB3",
     "[]🇹🇼 台湾-轮询",
     "[]🇹🇼 台湾-SUB1",
     "[]🇹🇼 台湾-SUB2",
@@ -1227,7 +1275,7 @@ name = "🇹🇼 台湾-延迟最低"
 type = "url-test"
 disable_udp = false
 rule = ["[]🇹🇼 台湾-SUB1", "[]🇹🇼 台湾-SUB2", "[]🇹🇼 台湾-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1237,7 +1285,7 @@ name = "🇹🇼 台湾-轮询"
 type = "fallback"
 disable_udp = false
 rule = ["[]🇹🇼 台湾-延迟最低", "[]🇹🇼 台湾-SUB1", "[]🇹🇼 台湾-SUB2", "[]🇹🇼 台湾-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 
@@ -1246,7 +1294,7 @@ name = "🇹🇼 台湾-SUB1"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=0!!(^🇹🇼.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1256,7 +1304,7 @@ name = "🇹🇼 台湾-SUB2"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=1!!(^🇹🇼.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1266,7 +1314,56 @@ name = "🇹🇼 台湾-SUB3"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=2!!(^🇹🇼.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
+interval = 180
+tolerance = 20
+lazy = true
+
+[[custom_groups]]
+name = "🇲🇴 澳门-延迟最低"
+type = "url-test"
+disable_udp = false
+rule = ["[]🇲🇴 澳门-SUB1", "[]🇲🇴 澳门-SUB2", "[]🇲🇴 澳门-SUB3"]
+url = "https://www.google-analytics.com/generate_204"
+interval = 180
+tolerance = 20
+lazy = true
+
+[[custom_groups]]
+name = "🇲🇴 澳门-轮询"
+type = "fallback"
+disable_udp = false
+rule = ["[]🇲🇴 澳门-延迟最低", "[]🇲🇴 澳门-SUB1", "[]🇲🇴 澳门-SUB2", "[]🇲🇴 澳门-SUB3"]
+url = "https://www.google-analytics.com/generate_204"
+interval = 180
+tolerance = 20
+
+[[custom_groups]]
+name = "🇲🇴 澳门-SUB1"
+type = "url-test"
+disable_udp = false
+rule = ["!!GROUPID=0!!(^🇲🇴.*(?!▷|回|转))", "[]REJECT"]
+url = "https://www.google-analytics.com/generate_204"
+interval = 180
+tolerance = 20
+lazy = true
+
+[[custom_groups]]
+name = "🇲🇴 澳门-SUB2"
+type = "url-test"
+disable_udp = false
+rule = ["!!GROUPID=1!!(^🇲🇴.*(?!▷|回|转))", "[]REJECT"]
+url = "https://www.google-analytics.com/generate_204"
+interval = 180
+tolerance = 20
+lazy = true
+
+[[custom_groups]]
+name = "🇲🇴 澳门-SUB3"
+type = "url-test"
+disable_udp = false
+rule = ["!!GROUPID=2!!(^🇲🇴.*(?!▷|回|转))", "[]REJECT"]
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1276,7 +1373,7 @@ name = "🇭🇰 香港-延迟最低"
 type = "url-test"
 disable_udp = false
 rule = ["[]🇭🇰 香港-SUB1", "[]🇭🇰 香港-SUB2", "[]🇭🇰 香港-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1286,7 +1383,7 @@ name = "🇭🇰 香港-轮询"
 type = "fallback"
 disable_udp = false
 rule = ["[]🇭🇰 香港-延迟最低", "[]🇭🇰 香港-SUB1", "[]🇭🇰 香港-SUB2", "[]🇭🇰 香港-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 
@@ -1295,7 +1392,7 @@ name = "🇭🇰 香港-SUB1"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=0!!(^🇭🇰.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1305,7 +1402,7 @@ name = "🇭🇰 香港-SUB2"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=1!!(^🇭🇰.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1315,7 +1412,7 @@ name = "🇭🇰 香港-SUB3"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=2!!(^🇭🇰.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1325,7 +1422,7 @@ name = "🇬🇧 英国-延迟最低"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇬🇧.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1335,7 +1432,7 @@ name = "🇺🇸 美国-延迟最低"
 type = "url-test"
 disable_udp = false
 rule = ["[]🇺🇸 美国-SUB1", "[]🇺🇸 美国-SUB2", "[]🇺🇸 美国-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1345,7 +1442,7 @@ name = "🇺🇸 美国-轮询"
 type = "fallback"
 disable_udp = false
 rule = ["[]🇺🇸 美国-延迟最低", "[]🇺🇸 美国-SUB1", "[]🇺🇸 美国-SUB2", "[]🇺🇸 美国-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 
@@ -1354,7 +1451,7 @@ name = "🇺🇸 美国-SUB1"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=0!!(^🇺🇸.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1364,7 +1461,7 @@ name = "🇺🇸 美国-SUB2"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=1!!(^🇺🇸.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1374,7 +1471,7 @@ name = "🇺🇸 美国-SUB3"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=2!!(^🇺🇸.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1384,7 +1481,7 @@ name = "🇯🇵 日本-延迟最低"
 type = "url-test"
 disable_udp = false
 rule = ["[]🇯🇵 日本-SUB1", "[]🇯🇵 日本-SUB2", "[]🇯🇵 日本-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1394,7 +1491,7 @@ name = "🇯🇵 日本-轮询"
 type = "fallback"
 disable_udp = false
 rule = ["[]🇯🇵 日本-延迟最低", "[]🇯🇵 日本-SUB1", "[]🇯🇵 日本-SUB2", "[]🇯🇵 日本-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 
@@ -1403,7 +1500,7 @@ name = "🇯🇵 日本-SUB1"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=0!!(^🇯🇵.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 60
 lazy = true
@@ -1413,7 +1510,7 @@ name = "🇯🇵 日本-SUB2"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=1!!(^🇯🇵.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 60
 lazy = true
@@ -1423,7 +1520,7 @@ name = "🇯🇵 日本-SUB3"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=2!!(^🇯🇵.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 60
 lazy = true
@@ -1433,7 +1530,7 @@ name = "🇷🇺 俄罗斯-延迟最低"
 type = "url-test"
 disable_udp = false
 rule = ["[]🇷🇺 俄罗斯-SUB1", "[]🇷🇺 俄罗斯-SUB2", "[]🇷🇺 俄罗斯-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1443,7 +1540,7 @@ name = "🇷🇺 俄罗斯-轮询"
 type = "fallback"
 disable_udp = false
 rule = ["[]🇷🇺 俄罗斯-延迟最低", "[]🇷🇺 俄罗斯-SUB1", "[]🇷🇺 俄罗斯-SUB2", "[]🇷🇺 俄罗斯-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 
@@ -1452,7 +1549,7 @@ name = "🇷🇺 俄罗斯-SUB1"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=0!!(^🇷🇺.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 60
 lazy = true
@@ -1462,7 +1559,7 @@ name = "🇷🇺 俄罗斯-SUB2"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=1!!(^🇷🇺.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 60
 lazy = true
@@ -1472,7 +1569,7 @@ name = "🇷🇺 俄罗斯-SUB3"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=2!!(^🇷🇺.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 60
 lazy = true
@@ -1482,7 +1579,7 @@ name = "🇸🇬 新加坡-延迟最低"
 type = "url-test"
 disable_udp = false
 rule = ["[]🇸🇬 新加坡-SUB1", "[]🇸🇬 新加坡-SUB2", "[]🇸🇬 新加坡-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1492,7 +1589,7 @@ name = "🇸🇬 新加坡-轮询"
 type = "fallback"
 disable_udp = false
 rule = ["[]🇸🇬 新加坡-延迟最低", "[]🇸🇬 新加坡-SUB1", "[]🇸🇬 新加坡-SUB2", "[]🇸🇬 新加坡-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 
@@ -1501,7 +1598,7 @@ name = "🇸🇬 新加坡-SUB1"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=0!!(^🇸🇬.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1511,7 +1608,7 @@ name = "🇸🇬 新加坡-SUB2"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=1!!(^🇸🇬.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1521,7 +1618,7 @@ name = "🇸🇬 新加坡-SUB3"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=2!!(^🇸🇬.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1531,7 +1628,7 @@ name = "🇰🇷 韩国-延迟最低"
 type = "url-test"
 disable_udp = false
 rule = ["[]🇰🇷 韩国-SUB1", "[]🇰🇷 韩国-SUB2", "[]🇰🇷 韩国-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1541,7 +1638,7 @@ name = "🇰🇷 韩国-轮询"
 type = "fallback"
 disable_udp = false
 rule = ["[]🇰🇷 韩国-延迟最低", "[]🇰🇷 韩国-SUB1", "[]🇰🇷 韩国-SUB2", "[]🇰🇷 韩国-SUB3"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 
@@ -1550,7 +1647,7 @@ name = "🇰🇷 韩国-SUB1"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=0!!(^🇰🇷.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1560,7 +1657,7 @@ name = "🇰🇷 韩国-SUB2"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=1!!(^🇰🇷.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1570,7 +1667,7 @@ name = "🇰🇷 韩国-SUB3"
 type = "url-test"
 disable_udp = false
 rule = ["!!GROUPID=2!!(^🇰🇷.*(?!▷|回|转))", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1582,15 +1679,16 @@ disable_udp = false
 rule = [
     "[]🇺🇸 美国-延迟最低",
     "[]🇭🇰 香港-延迟最低",
+    "[]🇲🇴 澳门-延迟最低",
     "[]🇹🇼 台湾-延迟最低",
     "[]🇯🇵 日本-延迟最低",
     "[]🇷🇺 俄罗斯-延迟最低",
-    "[]🍱 冷门地区",
     "[]🇸🇬 新加坡-延迟最低",
     "[]🇬🇧 英国-延迟最低",
     "[]🇰🇷 韩国-延迟最低",
+    "[]🍱 冷门地区",
 ]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1600,46 +1698,96 @@ name = "🍱 冷门地区"
 type = "url-test"
 disable_udp = false
 rule = [
+    "(^🇦🇨.*)",
     "(^🇦🇪.*)",
+    "(^🇦🇱.*)",
+    "(^🇦🇶.*)",
     "(^🇦🇷.*)",
     "(^🇦🇹.*)",
     "(^🇦🇺.*)",
     "(^🇦🇿.*)",
+    "(^🇧🇦.*)",
     "(^🇧🇩.*)",
+    "(^🇧🇪.*)",
     "(^🇧🇬.*)",
+    "(^🇧🇭.*)",
     "(^🇧🇷.*)",
     "(^🇨🇦.*)",
     "(^🇨🇭.*)",
     "(^🇨🇱.*)",
+    "(^🇨🇳.*)",
     "(^🇨🇴.*)",
+    "(^🇨🇷.*)",
+    "(^🇨🇾.*)",
     "(^🇨🇿.*)",
     "(^🇩🇪.*)",
+    "(^🇩🇰.*)",
+    "(^🇪🇨.*)",
+    "(^🇪🇪.*)",
     "(^🇪🇬.*)",
     "(^🇪🇸.*)",
+    "(^🇪🇺.*)",
     "(^🇫🇮.*)",
     "(^🇫🇷.*)",
-    "(^🇬🇧.*)",
+    "(^🇬🇪.*)",
+    "(^🇬🇷.*)",
+    "(^🇭🇷.*)",
+    "(^🇭🇺.*)",
+    "(^🇮🇩.*)",
     "(^🇮🇪.*)",
     "(^🇮🇱.*)",
+    "(^🇮🇲.*)",
     "(^🇮🇳.*)",
+    "(^🇮🇷.*)",
+    "(^🇮🇸.*)",
+    "(^🇮🇹.*)",
+    "(^🇯🇴.*)",
+    "(^🇰🇪.*)",
+    "(^🇰🇬.*)",
     "(^🇰🇭.*)",
+    "(^🇰🇵.*)",
+    "(^🇰🇿.*)",
+    "(^🇱🇹.*)",
+    "(^🇱🇺.*)",
     "(^🇱🇻.*)",
+    "(^🇲🇦.*)",
+    "(^🇲🇩.*)",
+    "(^🇲🇰.*)",
+    "(^🇲🇲.*)",
+    "(^🇲🇳.*)",
+    "(^🇲🇽.*)",
     "(^🇲🇾.*)",
+    "(^🇳🇬.*)",
     "(^🇳🇱.*)",
+    "(^🇳🇴.*)",
+    "(^🇳🇵.*)",
+    "(^🇳🇿.*)",
+    "(^🇴🇲.*)",
+    "(^🇵🇦.*)",
+    "(^🇵🇪.*)",
     "(^🇵🇭.*)",
     "(^🇵🇰.*)",
     "(^🇵🇱.*)",
+    "(^🇵🇷.*)",
+    "(^🇵🇹.*)",
+    "(^🇷🇴.*)",
+    "(^🇷🇸.*)",
     "(^🇸🇦.*)",
+    "(^🇸🇪.*)",
+    "(^🇸🇮.*)",
+    "(^🇸🇰.*)",
     "(^🇹🇭.*)",
+    "(^🇹🇳.*)",
     "(^🇹🇷.*)",
     "(^🇺🇦.*)",
+    "(^🇺🇾.*)",
+    "(^🇻🇦.*)",
+    "(^🇻🇪.*)",
     "(^🇻🇳.*)",
     "(^🇿🇦.*)",
-    "(^🇴🇲.*)",
-    "(^🇧🇭.*)",
     "[]REJECT",
 ]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1649,7 +1797,7 @@ name = "🇭🇰 香港-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇭🇰.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1659,7 +1807,7 @@ name = "🇲🇴 澳门-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇲🇴.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1669,7 +1817,7 @@ name = "🇹🇼 台湾-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇹🇼.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1679,7 +1827,7 @@ name = "🇬🇧 英国-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇬🇧.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1689,7 +1837,7 @@ name = "🇺🇸 美国-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇺🇸.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1699,7 +1847,7 @@ name = "🇯🇵 日本-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇯🇵.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1709,7 +1857,7 @@ name = "🇸🇬 新加坡-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇸🇬.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1719,7 +1867,7 @@ name = "🇰🇷 韩国-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇰🇷.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1729,7 +1877,7 @@ name = "🇷🇺 俄罗斯-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇷🇺.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1739,7 +1887,7 @@ name = "🇮🇳 印度-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇮🇳.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1749,7 +1897,7 @@ name = "🇦🇷 阿根廷-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇦🇷.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1759,7 +1907,7 @@ name = "🇦🇹 奥地利-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇦🇹.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1769,7 +1917,7 @@ name = "🇦🇿 阿塞拜疆-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇦🇿.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1779,7 +1927,7 @@ name = "🇧🇬 保加利亚-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇧🇬.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1789,7 +1937,7 @@ name = "🇧🇷 巴西-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇧🇷.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1799,7 +1947,7 @@ name = "🇨🇭 瑞士-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇨🇭.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1809,7 +1957,7 @@ name = "🇨🇱 智利-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇨🇱.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1819,7 +1967,7 @@ name = "🇨🇴 哥伦比亚-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇨🇴.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1829,7 +1977,7 @@ name = "🇨🇿 捷克-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇨🇿.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1839,7 +1987,7 @@ name = "🇪🇬 埃及-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇪🇬.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1849,7 +1997,7 @@ name = "🇪🇸 西班牙-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇪🇸.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1859,7 +2007,7 @@ name = "🇫🇮 芬兰-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇫🇮.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1869,7 +2017,7 @@ name = "🇮🇱 以色列-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇮🇱.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1879,7 +2027,7 @@ name = "🇱🇻 拉脱维亚-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇱🇻.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1889,7 +2037,7 @@ name = "🇲🇾 马来西亚-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇲🇾.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1899,7 +2047,7 @@ name = "🇳🇱 荷兰-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇳🇱.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1909,7 +2057,7 @@ name = "🇵🇰 巴基斯坦-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇵🇰.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1919,7 +2067,7 @@ name = "🇵🇱 波兰-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇵🇱.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1929,7 +2077,7 @@ name = "🇹🇭 泰国-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇹🇭.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1939,7 +2087,7 @@ name = "🇹🇷 土耳其-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇹🇷.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1949,7 +2097,7 @@ name = "🇺🇦 乌克兰-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇺🇦.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
@@ -1959,7 +2107,7 @@ name = "🇻🇳 越南-Media"
 type = "url-test"
 disable_udp = false
 rule = ["(^🇻🇳.*\\[M\\])", "[]REJECT"]
-url = "http://connect.rom.miui.com/generate_204"
+url = "https://www.google-analytics.com/generate_204"
 interval = 180
 tolerance = 20
 lazy = true
