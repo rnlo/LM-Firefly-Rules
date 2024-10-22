@@ -44,7 +44,7 @@ match = "(.*)( )(.*[0-9])( \\| )(.*)"
 replace = "$1$3$5"
 
 [[node_pref.rename_node]]
-match = "(流媒体)|(-M)|(原生IP)"
+match = "(流媒体)|(-M)|(原生IP)|(解锁)"
 replace = "[M]"
 
 [[node_pref.rename_node]]
